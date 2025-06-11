@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Profissão do Futuro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Tela Inicial -->
+    <div id="tela-inicial">
+      <h1>Quiz Profissão do Futuro</h1>
+      <p>Descubra qual profissão combina com você!</p>
+      <button onclick="iniciarQuiz()">Iniciar Quiz</button>
+    </div>
+
+    <!-- Tela do Quiz -->
+    <div id="quiz" class="oculto">
+      <h2 id="pergunta"></h2>
+      <div class="opcoes">
+        <button onclick="responder('A')" id="btnA"></button>
+        <button onclick="responder('B')" id="btnB"></button>
+        <button onclick="responder('C')" id="btnC"></button>
+        <button onclick="responder('D')" id="btnD"></button>
+        <button onclick="responder('E')" id="btnE"></button>
+        <button onclick="responder('F')" id="btnF"></button>
+        <button onclick="responder('G')" id="btnG"></button>
+        <button onclick="responder('H')" id="btnH"></button>
+      </div>
+    </div>
+
+    <!-- Tela de Resultado -->
+    <div id="resultado" class="oculto">
+      <h2>Resultado</h2>
+      <p id="mensagem"></p>
+      <button onclick="reiniciarQuiz()">Refazer Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
