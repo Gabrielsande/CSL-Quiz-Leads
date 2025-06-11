@@ -1,56 +1,103 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #0077ff, #00d4ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: ;
   color: white;
   margin: 0;
   padding: 0;
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 20px;
+  background: rgba(0,0,0,0.4);
+  padding: 25px 35px;
+  border-radius: 15px;
+  max-width: 450px;
+  width: 90vw;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-h1, h2 {
-  margin-bottom: 20px;
+h1 {
+  margin-bottom: 15px;
 }
 
 button {
-  background-color: white;
-  color: #0077ff;
+  background-color: #4c87f7;
   border: none;
-  padding: 12px 20px;
-  margin: 5px;
-  font-size: 16px;
+  padding: 12px 22px;
+  margin: 8px 5px;
   border-radius: 8px;
+  color: white;
+  font-size: 1rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
+  min-width: 120px;
 }
 
 button:hover {
-  background-color: #00d4ff;
-  color: white;
+  background-color: #2e59d9;
 }
 
 .oculto {
   display: none;
 }
 
-.opcoes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+#alternativas {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
-  .opcoes {
-    grid-template-columns: 1fr;
-  }
+#alternativas button {
+  margin: 10px 8px;
+}
 
-  button {
-    width: 100%;
-  }
+.cursos-sugeridos ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.cursos-sugeridos li {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cursos-sugeridos li:hover {
+  background-color: rgba(255, 255, 255, 0.30);
+}
+
+.detalhes-curso {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.detalhes-curso h4 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.detalhes-curso ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.detalhes-curso li {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
 }
