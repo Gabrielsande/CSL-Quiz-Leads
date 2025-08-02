@@ -15,12 +15,16 @@ Propor um quiz interativo simples e intuitivo que, com base nas respostas do usu
 - JavaScript (lógica do quiz, pontuação e resultado)
 ---
 
-## 📦 Estrutura de Arquivos
-
-# 📁 projeto-quiz-profissao/
+## 📁 Estrutura do Projeto
+ 
+```
+📦 portfolio-arquitetura/
 ├── index.html # Estrutura da página
 ├── style.css # Estilização visual
-└── script.js # Lógica do quiz
+├── script.js # Estilização visual
+└── README.md # Lógica do quiz
+```
+
 ---
 
 ## 🚀 Como Usar
