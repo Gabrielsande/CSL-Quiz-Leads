@@ -18,7 +18,7 @@ Propor um quiz interativo simples e intuitivo que, com base nas respostas do usu
 ## 📁 Estrutura do Projeto
  
 ```
-📦 portfolio-arquitetura/
+📦 CSL-QuizProfissao/
 ├── index.html # Estrutura da página
 ├── style.css # Estilização visual
 ├── script.js # Estilização visual
@@ -67,5 +67,9 @@ Este projeto foi desenvolvido com fins **educacionais** e está liberado para us
 
 ---
 
-Desenvolvido com 💙 por estudantes do curso técnico.
+## 👨‍🎓 Autores
+
+Desenvolvido por:  
+**Gabriel Sandes**  
+Projeto acadêmico da disciplina de **Programação Web**.
 
