@@ -58,34 +58,21 @@ const perguntas = [
 const pontos = { A: 0, B: 0, C: 0 };
 
 const mensagem = {
-  A:
-    "Você tem perfil para Tecnologia! Cursos sugeridos: Técnico em Informática, Análise e Desenvolvimento de Sistemas, Ciência da Computação.",
-  B:
-    "Você tem perfil para Saúde! Cursos sugeridos: Técnico em Enfermagem, Farmácia, Psicologia.",
-  C:
-    "Você tem perfil para Gestão! Cursos sugeridos: Técnico em Administração, Logística, Gestão Empresarial.",
+  A: "Você tem perfil para Tecnologia! Cursos sugeridos: Técnico em Informática, Análise e Desenvolvimento de Sistemas, Ciência da Computação.",
+  B: "Você tem perfil para Saúde! Cursos sugeridos: Técnico em Enfermagem, Farmácia, Psicologia.",
+  C: "Você tem perfil para Gestão! Cursos sugeridos: Técnico em Administração, Logística, Gestão Empresarial.",
 };
 
 const cursos = {
-  A: [
-    "Técnico em Informática",
-    "Análise e Desenvolvimento de Sistemas",
-    "Ciência da Computação",
-  ],
+  A: ["Técnico em Informática", "Análise e Desenvolvimento de Sistemas", "Ciência da Computação"],
   B: ["Técnico em Enfermagem", "Farmácia", "Psicologia"],
   C: ["Técnico em Administração", "Logística", "Gestão Empresarial"],
 };
 
 const cursosDetalhados = {
   "Técnico em Informática": {
-    "Cursos Técnicos": [
-      "Desenvolvimento de Sistemas - SENAI",
-      "Informática para Internet - ETEC",
-    ],
-    Faculdades: [
-      "Análise e Desenvolvimento de Sistemas - ULBRA",
-      "Ciência da Computação - PUCRS",
-    ],
+    "Cursos Técnicos": ["Desenvolvimento de Sistemas - SENAI", "Informática para Internet - ETEC"],
+    Faculdades: ["Análise e Desenvolvimento de Sistemas - ULBRA", "Ciência da Computação - PUCRS"],
   },
   Farmácia: {
     "Cursos Técnicos": ["Técnico em Farmácia - Senac", "Assistente de Laboratório - IF"],
@@ -93,10 +80,7 @@ const cursosDetalhados = {
   },
   Logística: {
     "Cursos Técnicos": ["Técnico em Logística - Senac", "Gestão de Estoques - ETEC"],
-    Faculdades: [
-      "Logística - ULBRA",
-      "Administração com ênfase em Logística - Unisinos",
-    ],
+    Faculdades: ["Logística - ULBRA", "Administração com ênfase em Logística - Unisinos"],
   },
   "Técnico em Enfermagem": {
     "Cursos Técnicos": ["Enfermagem - Senac", "Cuidador de Idosos - ETEC"],
@@ -136,6 +120,7 @@ function iniciarQuiz() {
   pontos.A = 0;
   pontos.B = 0;
   pontos.C = 0;
+
   mostrarPergunta();
 }
 
@@ -171,10 +156,7 @@ function mostrarResultado() {
 
   const container = document.getElementById("cursos-container");
   container.innerHTML = `<h3>Cursos sugeridos:</h3><ul>${cursos[maior]
-    .map(
-      (curso) =>
-        `<li onclick="mostrarDetalhes('${curso}')" style="cursor:pointer;">${curso}</li>`
-    )
+    .map((curso) => `<li onclick="mostrarDetalhes('${curso}')">${curso}</li>`)
     .join("")}</ul>`;
 }
 
@@ -187,13 +169,9 @@ function mostrarDetalhes(nomeCurso) {
     div.innerHTML = `
       <h4>Mais sobre: ${nomeCurso}</h4>
       <strong>Cursos Técnicos:</strong>
-      <ul>${detalhes["Cursos Técnicos"]
-        .map((item) => `<li>${item}</li>`)
-        .join("")}</ul>
+      <ul>${detalhes["Cursos Técnicos"].map((item) => `<li>${item}</li>`).join("")}</ul>
       <strong>Faculdades:</strong>
-      <ul>${detalhes["Faculdades"]
-        .map((item) => `<li>${item}</li>`)
-        .join("")}</ul>
+      <ul>${detalhes["Faculdades"].map((item) => `<li>${item}</li>`).join("")}</ul>
     `;
   } else {
     div.classList.remove("oculto");

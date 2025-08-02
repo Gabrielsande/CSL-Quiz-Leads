@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: ;
+  background: linear-gradient(to bottom, #4c87f7, #3058c5);
   color: white;
   margin: 0;
   padding: 0;
@@ -11,34 +11,34 @@ body {
 }
 
 .container {
-  background: rgba(0,0,0,0.4);
-  padding: 25px 35px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
   border-radius: 15px;
-  max-width: 450px;
+  max-width: 480px;
   width: 90vw;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
 }
 
-h1 {
-  margin-bottom: 15px;
+h1, h2, h3, h4 {
+  margin: 10px 0;
 }
 
 button {
-  background-color: #4c87f7;
+  background-color: #2e59d9;
   border: none;
-  padding: 12px 22px;
-  margin: 8px 5px;
+  padding: 12px 20px;
+  margin: 10px 6px;
   border-radius: 8px;
   color: white;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  min-width: 120px;
+  min-width: 140px;
 }
 
 button:hover {
-  background-color: #2e59d9;
+  background-color: #1d3fa3;
 }
 
 .oculto {
@@ -48,56 +48,35 @@ button:hover {
 #alternativas {
   margin-top: 20px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
 }
 
-#alternativas button {
-  margin: 10px 8px;
-}
-
-.cursos-sugeridos ul {
+.cursos-sugeridos ul,
+.detalhes-curso ul {
   list-style: none;
-  padding-left: 0;
-  margin-top: 15px;
+  padding: 0;
 }
 
-.cursos-sugeridos li {
+.cursos-sugeridos li,
+.detalhes-curso li {
   background-color: rgba(255, 255, 255, 0.15);
   margin: 8px 0;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-.cursos-sugeridos li:hover {
-  background-color: rgba(255, 255, 255, 0.30);
+.cursos-sugeridos li:hover,
+.detalhes-curso li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .detalhes-curso {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 10px;
   margin-top: 25px;
   text-align: left;
-}
-
-.detalhes-curso h4 {
-  margin-top: 0;
-  color: #ffffff;
-}
-
-.detalhes-curso ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 15px;
-}
-
-.detalhes-curso li {
-  background-color: rgba(255, 255, 255, 0.25);
-  margin: 6px 0;
-  padding: 10px;
-  border-radius: 6px;
-  color: #fff;
 }
